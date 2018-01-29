@@ -1,0 +1,72 @@
+$primary-color: #eee;
+$secondary-color: dodgerblue;
+
+$normal-text: #000;
+$paragraph-text: #444;
+
+@mixin border-radius($radius){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -msborder-radius: $radius;
+    border-radius: $radius;
+}
+%fixed-a {
+    text-decoration: none;
+    text-transform: none;
+    color: $normal-text;
+}
+
+* {
+   box-sizing: border-box;
+   font-family: oswald;
+}
+
+a {
+    @extend %fixed-a;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+    font-variant: small-caps;
+}
+html, body, ul, li {
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    
+    header, nav, section, footer {
+        float: left;
+        width: 100%;
+    }
+    
+    header {
+        text-align: center;
+        background: $primary-color;
+    }
+    
+    nav {
+        background: $secondary-color;
+        
+        ul {
+            list-style-type: none;
+            
+            li {
+                float: left;
+                
+                a {
+                    padding: 14px 16px;
+                }
+            }
+        }
+    }
+    section {
+        padding-left: 20px;
+        background: $primary-color;
+    }
+    footer {
+        text-align: center;
+        background: $secondary-color;
+    }
+}

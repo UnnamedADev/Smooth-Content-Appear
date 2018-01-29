@@ -1,0 +1,39 @@
+a {
+  text-decoration: none;
+  text-transform: none;
+  color: #000; }
+
+* {
+  box-sizing: border-box;
+  font-family: oswald; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-variant: small-caps; }
+
+html, body, ul, li {
+  margin: 0;
+  padding: 0; }
+
+body header, body nav, body section, body footer {
+  float: left;
+  width: 100%; }
+body header {
+  text-align: center;
+  background: #eee; }
+body nav {
+  background: dodgerblue; }
+  body nav ul {
+    list-style-type: none; }
+    body nav ul li {
+      float: left; }
+      body nav ul li a {
+        padding: 14px 16px; }
+body section {
+  padding-left: 20px;
+  background: #eee; }
+body footer {
+  text-align: center;
+  background: dodgerblue; }
+
+/*# sourceMappingURL=style.css.map */
