@@ -1,5 +1,6 @@
 $primary-color: #eee;
-$secondary-color: dodgerblue;
+$secondary-color: #4286f4;
+$hover-secondary-color: #306dd1;
 
 $normal-text: #000;
 $paragraph-text: #444;
@@ -50,14 +51,20 @@ body {
         background: $secondary-color;
         
         ul {
+            margin-left: 30px;
             list-style-type: none;
-            
+            display: inline-block;
+            vertical-align: bottom;
             li {
                 float: left;
-                
+                background: $secondary-color;
+                padding: 7px 16px;
                 a {
-                    padding: 14px 16px;
-                }
+                    
+                }  
+            }
+            li:hover {
+                background: $hover-secondary-color;
             }
         }
     }

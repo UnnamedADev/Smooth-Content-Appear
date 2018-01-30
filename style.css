@@ -22,18 +22,23 @@ body header {
   text-align: center;
   background: #eee; }
 body nav {
-  background: dodgerblue; }
+  background: #4286f4; }
   body nav ul {
-    list-style-type: none; }
+    margin-left: 30px;
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: bottom; }
     body nav ul li {
-      float: left; }
-      body nav ul li a {
-        padding: 14px 16px; }
+      float: left;
+      background: #4286f4;
+      padding: 7px 16px; }
+    body nav ul li:hover {
+      background: #306dd1; }
 body section {
   padding-left: 20px;
   background: #eee; }
 body footer {
   text-align: center;
-  background: dodgerblue; }
+  background: #4286f4; }
 
 /*# sourceMappingURL=style.css.map */
